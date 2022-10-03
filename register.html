@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page Title</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main-register.css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Neucha&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<script src='register.js'></script>
+</head>
+<body>
+	<form name="registerForm" id="registerForm" action="login.html" action = "register.js/alertInfo">
+		<fieldset>
+			<legend>Register</legend>
+			<span class ="topic-text">Please fill every information form</span> <br>
+			<span id="errormsg"></span> <br>
+			<span>First name *: </span> 
+			<input type="text" name="firstname" required>
+			<span>Last name*:</span> 
+			<input type="text" name="lastname" >
+			<br>
+			<span>Gender *: </span>
+			<input type="radio" name="gender" value="male" ><span class = "sex">Male</span>
+			<input type="radio" name="gender" value="female" ><span class = "sex">Female</span>
+			<input type="radio" name="gender" value="female" ><span class = "sex">Other</span>
+			<br>
+			<span>Birthday *: </span>
+			<input class ="date" type="date" name="bday" value="" >
+			<br>
+			<span>Email address *: </span>
+			<input type="email" name="email" >
+			<br>
+			<span>Username *: </span>
+			<input type="text" name="username" >
+			<br>
+			<span>Password *: </span>
+			<input type="password" name="password" required>
+			<br>
+			<span>Retype Password *: </span>
+			<input type="password" name="repassword" required>
+			<br>
+			<input class ="button-page" type="submit" id ="register" value="Register">
+			<input class ="button-page" type="reset" value="Clear">
+		</fieldset>
+	</form>
+</body>
+</html>
